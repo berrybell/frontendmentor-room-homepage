@@ -1,0 +1,26 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: "Spartan", sans-serif;
+}
+
+.copy-header {
+}
+
+.copy-text {
+  font-size: 12px;
+}
+
+/* Colors **/
+$darkGrey: hsl(0, 0%, 63%);
+$black: hsl(0, 0%, 0%);
+$white: hsl(0, 0%, 100%);
+$veryDarkGrey: hsl(0, 0%, 27%);
+
+/* Media queries **/
+@media only screen and (min-width: 1440px,) {
+}
