@@ -30,6 +30,10 @@ a {
   color: $veryDarkGrey;
 }
 
+.about-header {
+  text-transform: uppercase;
+}
+
 /* Media queries **/
 @media only screen and (min-width: 1440px,) {
 }
