@@ -24,31 +24,36 @@ a {
 
 .copy-wrapper {
   background-color: $white;
-  padding: 40px 20px;
+  padding: 19% 8%;
 }
 
 .copy-header {
   font-weight: 600;
+  font-size: 28px;
 }
 
 .copy-text {
   font-size: 12px;
-  line-height: 1.75em;
+  line-height: 20px;
   color: $darkGrey;
 }
 
 .cta-link {
-  font-size: 14px;
-  letter-spacing: 15px;
+  font-size: 12px;
+  line-height: 133%;
+  letter-spacing: 10px;
   &::after {
-    content: "⟶";
+    content: url(./images/icon-arrow.svg);
     font-size: 24px;
     margin-left: 20px;
   }
 }
 
 .about-header {
+  font-size: 12px;
+  line-height: 183%;
   text-transform: uppercase;
+  letter-spacing: 5px;
 }
 
 /* Media queries **/
