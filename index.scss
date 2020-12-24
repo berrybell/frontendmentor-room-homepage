@@ -23,6 +23,11 @@ a {
 }
 
 /* Navigation **/
+nav {
+  height: 110px;
+  display: flex;
+}
+
 .nav-closed {
   background: transparent;
   ul {
@@ -31,7 +36,7 @@ a {
 }
 
 .nav-open {
-  height: 110px;
+  background: $white;
   text-transform: lowercase;
   ul {
     display: flex;
