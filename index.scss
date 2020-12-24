@@ -22,6 +22,27 @@ a {
   text-transform: uppercase;
 }
 
+/* Navigation **/
+.nav-closed {
+  background: transparent;
+  ul {
+    display: none;
+  }
+}
+
+.nav-open {
+  height: 110px;
+  text-transform: lowercase;
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 50px 25px;
+  }
+}
+
+/* Main content **/
 main {
   display: flex;
   flex-direction: column;
