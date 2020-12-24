@@ -22,6 +22,11 @@ a {
   text-transform: uppercase;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+}
+
 .copy-wrapper {
   background-color: $white;
   padding: 19% 8%;
