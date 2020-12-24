@@ -40,6 +40,11 @@ a {
 .cta-link {
   font-size: 14px;
   letter-spacing: 15px;
+  &::after {
+    content: "⟶";
+    font-size: 24px;
+    margin-left: 20px;
+  }
 }
 
 .about-header {
