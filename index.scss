@@ -22,7 +22,12 @@ a {
   text-transform: uppercase;
 }
 
-/* Navigation **/
+/* Navigation and hero **/
+.logo {
+  max-width: 100%;
+  margin: auto;
+}
+
 nav {
   height: 110px;
   display: flex;
