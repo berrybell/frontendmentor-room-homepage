@@ -24,8 +24,12 @@ a {
 
 /* Navigation and hero **/
 .logo {
+  display: block;
+  width: 62px;
   max-width: 100%;
-  margin: auto;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: -60px;
 }
 
 .hidden {
@@ -35,6 +39,9 @@ a {
 nav {
   height: 110px;
   display: flex;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
 }
 
 .nav-closed {
