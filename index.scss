@@ -28,10 +28,13 @@ a {
   margin: auto;
 }
 
+.hidden {
+  display: none;
+}
+
 nav {
   height: 110px;
   display: flex;
-  z-index: 2;
 }
 
 .nav-closed {
@@ -53,8 +56,11 @@ nav {
   }
 }
 
+#nav-button {
+  padding: 47px 25px;
+}
+
 .hero-section {
-  z-index: 0;
   position: absolute;
   top: 0;
   width: 100%;
