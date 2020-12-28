@@ -42,7 +42,7 @@ nav {
   height: 110px;
   display: flex;
   position: -webkit-sticky;
-  position: sticky;
+  position: relative;
   top: 0px;
   z-index: 2;
 }
@@ -55,6 +55,7 @@ nav {
 }
 
 .nav-open {
+  position: sticky;
   background: $white;
   text-transform: lowercase;
   ul {
