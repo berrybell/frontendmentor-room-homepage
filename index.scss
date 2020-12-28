@@ -30,6 +30,8 @@ a {
   margin-right: auto;
   margin-left: auto;
   margin-top: -60px;
+  position: relative;
+  z-index: 1;
 }
 
 .hidden {
@@ -42,6 +44,7 @@ nav {
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
+  z-index: 2;
 }
 
 .nav-closed {
@@ -75,6 +78,9 @@ nav {
 }
 
 .carousel {
+  position: relative;
+  top: -65px;
+  z-index: 0;
   img {
     width: 100%;
     height: auto;
