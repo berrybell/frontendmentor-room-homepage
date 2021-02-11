@@ -1,7 +1,7 @@
 const nav = document.querySelector("nav");
 const navButton = document.getElementById("nav-button");
-const closed = document.getElementById("icon-closed");
-const open = document.getElementById("icon-open");
+const navButtonClosed = document.getElementById("icon-closed");
+const navButtonOpen = document.getElementById("icon-open");
 
 console.log(document.getElementById("nav-button"));
 
@@ -10,13 +10,15 @@ navButton.onclick = function () {
     nav.classList.add("nav-open");
     nav.classList.remove("nav-closed");
 
-    open.classList.remove("hidden");
-    closed.classList.add("hidden");
+    navButton.classList.add("open");
+    navButtonOpen.classList.remove("hidden");
+    navButtonClosed.classList.add("hidden");
   } else if (nav.classList.contains("nav-open")) {
     nav.classList.add("nav-closed");
     nav.classList.remove("nav-open");
 
-    open.classList.add("hidden");
-    closed.classList.remove("hidden");
+    navButton.classList.remove("open");
+    navButtonOpen.classList.add("hidden");
+    navButtonClosed.classList.remove("hidden");
   }
 };
