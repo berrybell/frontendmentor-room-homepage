@@ -23,6 +23,10 @@ a {
 }
 
 /* Navigation and hero **/
+header {
+  max-height: 360px;
+}
+
 .logo {
   display: block;
   width: 62px;
@@ -79,10 +83,7 @@ nav {
 }
 
 .hero-section {
-  position: absolute;
-  top: 0;
   width: 100%;
-  height: 360px;
 }
 
 .carousel {
@@ -90,6 +91,7 @@ nav {
   top: -65px;
   z-index: 0;
   img {
+    object-fit: cover;
     width: 100%;
     height: auto;
     display: none;
@@ -107,7 +109,7 @@ main {
 
 .copy-wrapper {
   background-color: $white;
-  padding: 19% 8%;
+  padding: 10% 8%;
 }
 
 .copy-header {
