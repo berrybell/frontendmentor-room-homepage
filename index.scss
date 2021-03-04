@@ -155,10 +155,15 @@ main {
   font-size: 12px;
   line-height: 133%;
   letter-spacing: 10px;
+
   &::after {
     content: url(./images/icon-arrow.svg);
     font-size: 24px;
     margin-left: 20px;
+  }
+
+  &:hover {
+    color: $darkGrey;
   }
 }
 
