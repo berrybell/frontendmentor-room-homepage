@@ -70,17 +70,17 @@ nav {
     height: 110px;
     padding: 50px 25px;
     background-color: white;
+  }
 
-    &::after {
-      content: "";
-      height: 100vh;
-      background-color: hsla(0, 0%, 27%, 0.95);
-      position: fixed;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-    }
+  &::before {
+    content: "";
+    height: 100vh;
+    background-color: hsla(0, 0%, 27%, 0.95);
+    position: fixed;
+    top: 110px;
+    left: 0;
+    bottom: 0;
+    right: 0;
   }
 }
 
