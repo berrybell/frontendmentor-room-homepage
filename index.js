@@ -30,4 +30,16 @@ const backButton = document.getElementById("back-button");
 const carouselImages = document.querySelectorAll(".carousel-image");
 const copyWrappers = document.querySelectorAll(".copy-wrapper");
 
-console.log("copyWrappers", copyWrappers);
+forwardButton.onclick = function () {
+  console.log("Forward");
+  for (let i = 0; i < carouselImages.length; i++) {
+    let item = carouselImages.item(i);
+    let nextItem = carouselImages.item(i + 1);
+
+    if (item.classList.contains("active")) {
+      item.classList.remove("active");
+      nextItem.classList.add("active");
+      return;
+    }
+  }
+};
