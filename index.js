@@ -44,3 +44,18 @@ forwardButton.onclick = function () {
     }
   }
 };
+
+backButton.onclick = function () {
+  for (let i = 0; i < carouselImages.length; i++) {
+    let item = carouselImages.item(i);
+
+    if (item.classList.contains("active")) {
+      let prevIndex = i === 0 ? carouselImages.length - 1 : i - 1;
+      let prevItem = carouselImages.item(prevIndex);
+
+      item.classList.remove("active");
+      prevItem.classList.add("active");
+      return;
+    }
+  }
+};
