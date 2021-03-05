@@ -1,9 +1,9 @@
+// Toggle navigation
+
 const nav = document.querySelector("nav");
 const navButton = document.getElementById("nav-button");
 const navButtonClosed = document.getElementById("icon-closed");
 const navButtonOpen = document.getElementById("icon-open");
-
-console.log(document.getElementById("nav-button"));
 
 navButton.onclick = function () {
   if (nav.classList.contains("nav-closed")) {
@@ -22,3 +22,12 @@ navButton.onclick = function () {
     navButtonClosed.classList.remove("hidden");
   }
 };
+
+// Scroll through copy
+const forwardButton = document.getElementById("forward-button");
+const backButton = document.getElementById("back-button");
+
+const carouselImages = document.querySelectorAll(".carousel-image");
+const copyWrappers = document.querySelectorAll(".copy-wrapper");
+
+console.log("copyWrappers", copyWrappers);

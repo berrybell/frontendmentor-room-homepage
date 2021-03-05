@@ -27,6 +27,10 @@ header {
   max-height: 360px;
 }
 
+@mixin active {
+  display: block;
+}
+
 .logo {
   display: block;
   width: 62px;
@@ -100,14 +104,15 @@ nav {
   position: relative;
   top: -65px;
   z-index: 0;
-  img {
+  .carousel-image {
     object-fit: cover;
     width: 100%;
     height: 360px;
     margin: auto;
     display: none;
+
     &.active {
-      display: block;
+      @include active;
     }
   }
 }
@@ -137,6 +142,11 @@ main {
 .copy-wrapper {
   background-color: $white;
   padding: 10% 8%;
+  display: none;
+
+  &.active {
+    @include active;
+  }
 }
 
 .copy-header {

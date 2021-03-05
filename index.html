@@ -34,25 +34,25 @@
     <img src="images/logo.svg" alt="" class='logo'>
 
     <div class="carousel">
-      <img srcset="images/mobile-image-hero-1.jpg 375w,
+      <img class='carousel-image active' srcset="images/mobile-image-hero-1.jpg 375w,
       images/desktop-image-hero-1.jpg 840w" sizes="(max-width: 1440px) 100vw,
       100vw" src='images/mobile-image-hero-1.jpg' alt="" class='active'>
-      <img srcset="images/mobile-image-hero-2.jpg 375w,
+      <img class='carousel-image' srcset="images/mobile-image-hero-2.jpg 375w,
       images/desktop-image-hero-2.jpg 840w" sizes="(max-width: 1440px) 100vw,
       100vw" src="images/mobile-image-hero-2.jpg" alt="">
-      <img srcset="images/mobile-image-hero-3.jpg 375w,
+      <img class='carousel-image' srcset="images/mobile-image-hero-3.jpg 375w,
       images/desktop-image-hero-3.jpg 840w" sizes="(max-width: 1440px) 100vw,
       100vw" src="images/mobile-image-hero-3.jpg" alt="">
     </div>
 
     <div class="button-wrapper">
-      <button class="carousel-button"><img src="images/icon-angle-left.svg" /></button>
-      <button class="carousel-button"><img src="images/icon-angle-right.svg" /></button>
+      <button id='forward-button' class="carousel-button"><img src="images/icon-angle-left.svg" /></button>
+      <button id='back-button' class="carousel-button"><img src="images/icon-angle-right.svg" /></button>
     </div>
   </header>
 
   <main>
-    <div class="copy-wrapper">
+    <div class="copy-wrapper active">
       <h2 class="copy-header">Discover innovative ways to decorate</h2>
       <p class="copy-text">We provide unmatched quality, comfort, and style for property owners across the country. Our
         experts combine form and function in bringing your vision to life. Create a room in your own style with our
@@ -81,7 +81,7 @@
 
     <img src="images/image-about-dark.jpg" alt="">
 
-    <div class="copy-wrapper">
+    <div class="copy-wrapper active">
       <h2 class="copy-header about-header">About our furniture</h2>
       <p class="copy-text">
         Our multifunctional collection blends design and function to suit your
