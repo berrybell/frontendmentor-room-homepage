@@ -31,12 +31,13 @@ const carouselImages = document.querySelectorAll(".carousel-image");
 const copyWrappers = document.querySelectorAll(".copy-wrapper");
 
 forwardButton.onclick = function () {
-  console.log("Forward");
   for (let i = 0; i < carouselImages.length; i++) {
     let item = carouselImages.item(i);
-    let nextItem = carouselImages.item(i + 1);
 
     if (item.classList.contains("active")) {
+      let nextIndex = i === carouselImages.length - 1 ? 0 : i + 1;
+      let nextItem = carouselImages.item(nextIndex);
+
       item.classList.remove("active");
       nextItem.classList.add("active");
       return;
