@@ -144,7 +144,8 @@ main {
   flex-direction: column;
 }
 
-.copy-wrapper {
+.copy-wrapper,
+.about-wrapper {
   background-color: $white;
   padding: 10% 8%;
   display: none;
@@ -152,6 +153,10 @@ main {
   &.active {
     @include active;
   }
+}
+
+.about-wrapper {
+  display: block;
 }
 
 .copy-header {
