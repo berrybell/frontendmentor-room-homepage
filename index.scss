@@ -217,13 +217,16 @@ nav {
   }
 
   .carousel {
-    top: 0px;
+    top: 46px;
+    .carousel-image {
+      height: 100%;
+    }
   }
 
 .button-wrapper {
   top: 0;
   left: 160px;
-  
+
   .carousel-button {
     width: 80px;
     height: 80px;
