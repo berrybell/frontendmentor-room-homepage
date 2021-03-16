@@ -35,7 +35,7 @@ header {
   display: block;
 }
 
-.logo {
+#logo {
   display: block;
   width: 62px;
   max-width: 100%;
@@ -206,6 +206,10 @@ nav {
   .hero-section {
     height: 60vh;
     width: 60%;
+  }
+
+  #logo {
+    margin-left: 64px;
   }
 
   .copy {
