@@ -220,6 +220,21 @@ nav {
     top: 0px;
   }
 
+.button-wrapper {
+  top: 0;
+  left: 160px;
+  
+  .carousel-button {
+    width: 80px;
+    height: 80px;
+    img {
+      display: inline-block;
+    }
+  }
+}
+
+
+
   .copy {
     height: 60vh;
     width: 40%;
