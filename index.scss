@@ -203,6 +203,10 @@ nav {
     max-height: 60vh;
   }
 
+  .nav-closed {
+    @include hidden;
+  }
+
   .hero-section {
     height: 60vh;
     width: 60%;
@@ -210,6 +214,10 @@ nav {
 
   #logo {
     margin-left: 64px;
+  }
+
+  .carousel {
+    top: 0px;
   }
 
   .copy {
