@@ -210,8 +210,8 @@ nav {
     max-height: 60vh;
   }
 
-  .nav-closed {
-    @include hidden;
+  nav {
+    top: -10px;
   }
 
   .hero-section {
@@ -221,10 +221,11 @@ nav {
 
   #logo {
     margin-left: 64px;
+    top: -10px;
   }
 
   .carousel {
-    top: 46px;
+    top: -64px;
     .carousel-image {
       height: auto;
       width: 100%;
@@ -234,7 +235,7 @@ nav {
   }
 
   .button-wrapper {
-    top: -34px;
+    top: -144px;
     left: 160px;
 
     .carousel-button {
