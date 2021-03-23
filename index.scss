@@ -105,9 +105,8 @@ nav {
   top: -65px;
   z-index: 0;
   .carousel-image {
-    object-fit: cover;
     width: 100%;
-    height: 360px;
+    height: auto;
     margin: auto;
 
     @include hidden;
