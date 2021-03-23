@@ -136,10 +136,12 @@ nav {
   height: 56px;
   background-color: black;
   cursor: pointer;
+  img {
+    display: inline-block;
+  }
 }
 
 /* Main content **/
-
 .copy-wrapper,
 .about-wrapper {
   background-color: $white;
@@ -185,6 +187,11 @@ nav {
   }
 }
 
+#about-dark,
+#about-light {
+  width: 100%;
+}
+
 .about-header {
   font-size: 12px;
   line-height: 183%;
@@ -192,7 +199,9 @@ nav {
   letter-spacing: 5px;
 }
 
-/* Media queries **/
+/* Media queries - Medium **/
+
+/* Media queries - Large **/
 @media only screen and (min-width: 1440px,) {
   main {
     display: flex;
@@ -220,23 +229,22 @@ nav {
     top: 46px;
     .carousel-image {
       height: 100%;
+      max-height: 60vh;
     }
   }
 
-.button-wrapper {
-  top: 0;
-  left: 160px;
+  .button-wrapper {
+    top: -34px;
+    left: 160px;
 
-  .carousel-button {
-    width: 80px;
-    height: 80px;
-    img {
-      display: inline-block;
+    .carousel-button {
+      width: 80px;
+      height: 80px;
+      img {
+        display: inline-block;
+      }
     }
   }
-}
-
-
 
   .copy {
     height: 60vh;
@@ -247,7 +255,8 @@ nav {
     font-size: 40px;
   }
 
-  #about-dark, #about-light {
+  #about-dark,
+  #about-light {
     height: 30vh;
     width: 30%;
   }
@@ -257,7 +266,6 @@ nav {
     width: 40%;
     padding: 4% 8%;
   }
-
 }
 
 /* Footer styles **/
