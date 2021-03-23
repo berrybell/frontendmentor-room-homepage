@@ -98,7 +98,7 @@ nav {
 
 .hero-section {
   width: 100%;
-  max-height: 360px;
+  max-height: 330px;
 }
 
 .carousel {
@@ -106,6 +106,7 @@ nav {
   top: -65px;
   z-index: 0;
   .carousel-image {
+    object-fit: cover;
     width: 100%;
     height: auto;
     max-height: 330px;
@@ -263,6 +264,7 @@ nav {
   #about-light {
     width: 30%;
     height: auto;
+    object-fit: cover;
   }
 
   .about-wrapper {
