@@ -197,8 +197,6 @@ nav {
   letter-spacing: 5px;
 }
 
-/* Media queries - Medium **/
-
 /* Media queries - Large **/
 @media only screen and (min-width: 1440px,) {
   main {
@@ -210,8 +208,27 @@ nav {
     max-height: 60vh;
   }
 
-  nav {
-    top: -10px;
+  .nav-logo-wrapper {
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: flex-end;
+    width: 60vw;
+  }
+
+  .nav-open {
+    #nav-button {
+      display: none;
+    }
+    ul {
+      width: 50vw;
+      background-color: transparent;
+      li {
+        color: white;
+      }
+    }
+    &::before {
+      display: none;
+    }
   }
 
   .hero-section {
@@ -220,12 +237,12 @@ nav {
   }
 
   #logo {
-    margin-left: 64px;
-    top: -10px;
+    margin: 64px 0 0 64px;
+    height: 100%;
   }
 
   .carousel {
-    top: -64px;
+    top: -110px;
     .carousel-image {
       height: 60vh;
       width: 100%;
@@ -235,7 +252,7 @@ nav {
   }
 
   .button-wrapper {
-    top: calc(-64px + -5vw);
+    top: calc(-110px + -5vw);
     left: 60vw;
     width: 10vw;
 
