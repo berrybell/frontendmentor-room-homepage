@@ -2,6 +2,7 @@
 /design
 /dist
 /.cache
+/.parcel-cache
 /images/*.jpg
 
 *.md
