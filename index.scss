@@ -137,6 +137,9 @@ nav {
   img {
     display: inline-block;
   }
+  &:hover {
+    background-color: $veryDarkGrey;
+  }
 }
 
 /* Main content **/
