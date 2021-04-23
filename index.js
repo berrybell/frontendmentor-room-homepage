@@ -6,15 +6,13 @@ const navButtonClosed = document.getElementById("icon-closed");
 const navButtonOpen = document.getElementById("icon-open");
 
 navButton.onclick = function () {
-  if (nav.classList.contains("nav-closed")) {
+  if (!nav.classList.contains("nav-open")) {
     nav.classList.add("nav-open");
-    nav.classList.remove("nav-closed");
 
     navButton.classList.add("open");
     navButtonOpen.classList.remove("hidden");
     navButtonClosed.classList.add("hidden");
   } else if (nav.classList.contains("nav-open")) {
-    nav.classList.add("nav-closed");
     nav.classList.remove("nav-open");
 
     navButton.classList.remove("open");
