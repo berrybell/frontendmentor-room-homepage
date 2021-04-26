@@ -235,6 +235,16 @@ nav {
       background-color: transparent;
       li {
         color: white;
+        background-image: linear-gradient(white, white),
+          linear-gradient(transparent, transparent);
+        padding-bottom: 10px;
+        background-size: 0 2px, auto;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        transition: all 0.2s ease-out;
+        &:hover {
+          background-size: 100% 2px, auto;
+        }
       }
     }
     &::before {
