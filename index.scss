@@ -188,7 +188,8 @@ nav {
   }
 
   &:hover {
-    color: $darkGrey;
+    filter: invert(71%) sepia(3%) saturate(0%) hue-rotate(248deg)
+      brightness(92%) contrast(85%);
   }
 }
 
