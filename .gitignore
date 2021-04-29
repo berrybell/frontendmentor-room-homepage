@@ -5,5 +5,4 @@
 /.parcel-cache
 /images/*.jpg
 
-*.md
 .DS_Store
