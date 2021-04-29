@@ -125,7 +125,7 @@ nav {
 
 .button-wrapper {
   position: relative;
-  top: -121px;
+  top: calc(-65px - 15vw);
   display: flex;
   justify-content: flex-end;
 }
@@ -133,12 +133,13 @@ nav {
 .carousel-button {
   margin: 0;
   padding: 0;
-  width: 56px;
-  height: 56px;
+  width: 15vw;
+  height: 15vw;
   background-color: black;
   cursor: pointer;
   img {
     display: inline-block;
+    height: 5.25vw;
   }
   &:hover {
     background-color: $veryDarkGrey;
