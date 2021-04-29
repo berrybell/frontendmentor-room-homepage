@@ -28,7 +28,7 @@ const backButton = document.getElementById("back-button");
 const carouselImages = document.querySelectorAll(".carousel-image");
 const copyWrappers = document.querySelectorAll(".copy-wrapper");
 
-forwardButton.onclick = function () {
+function scrollForward() {
   for (let i = 0; i < carouselImages.length; i++) {
     let image = carouselImages.item(i);
     let copy = copyWrappers.item(i);
@@ -45,9 +45,9 @@ forwardButton.onclick = function () {
       return;
     }
   }
-};
+}
 
-backButton.onclick = function () {
+function scrollBack() {
   for (let i = 0; i < carouselImages.length; i++) {
     let image = carouselImages.item(i);
     let copy = copyWrappers.item(i);
@@ -64,4 +64,19 @@ backButton.onclick = function () {
       return;
     }
   }
+}
+
+forwardButton.onclick = function () {
+  scrollForward();
 };
+backButton.onclick = function () {
+  scrollBack();
+};
+
+document.addEventListener("keydown", function (event) {
+  if (event.key === "ArrowRight") {
+    scrollForward();
+  } else if (event.key === "ArrowLeft") {
+    scrollBack();
+  }
+});
