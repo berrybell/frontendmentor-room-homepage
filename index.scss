@@ -171,6 +171,7 @@ nav {
 .copy-text {
   font-size: 12px;
   line-height: 20px;
+  letter-spacing: -0.25px;
   color: $darkGrey;
 }
 
@@ -300,11 +301,13 @@ nav {
   }
 
   .copy-wrapper .copy-header {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
+    line-height: 45px;
+    letter-spacing: -1.66667px;
   }
 
   .copy-wrapper {
-    padding: 22.5% 17% 28.5%;
+    padding: 21% 16% 28.5%;
   }
 
   .about-section {
