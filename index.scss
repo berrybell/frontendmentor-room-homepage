@@ -342,3 +342,36 @@ nav {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+/* Test: absolute values **/
+
+@media only screen and (min-width: 1440px) {
+  .hero-section {
+    /* height: 60vh; */
+    /* width: 58.4vw; */
+    height: 534px;
+    width: 840px;
+  }
+  .copy {
+    /* height: 60vh; */
+    height: 534px;
+  }
+  .about-section {
+    /* height: 33vh; */
+    height: 266px;
+  }
+  .nav-logo-wrapper {
+    /* width: 60vw; */
+    width: 840px;
+  }
+  .carousel .carousel-image {
+    /* height: 60vh; */
+    /* max-height: 60vh; */
+    height: 534px;
+    max-height: 534px;
+  }
+  .button-wrapper {
+    /* left: 57.4vw; */
+    left: 825px;
+  }
+}
