@@ -346,7 +346,7 @@ nav {
 
   #about-dark,
   #about-light {
-    width: 30%;
+    width: 29.15vw;
     height: auto;
     object-fit: cover;
   }
@@ -367,34 +367,43 @@ nav {
   color: hsl(228, 45%, 44%);
 }
 
-/* Test: absolute values **/
+// Test: relative values
+
+/* index.609f8ea4.css | http://localhost:1234/index.609f8ea4.css */
+
 @media only screen and (min-width: 1440px) {
-  .hero-section {
-    /* height: 60vh; */
-    /* width: 58.4vw; */
-    height: 534px;
-    width: 840px;
-  }
-  .copy {
-    /* height: 60vh; */
-    height: 534px;
-  }
-  .about-section {
-    /* height: 33vh; */
-    height: 266px;
-  }
-  .nav-logo-wrapper {
-    /* width: 60vw; */
-    width: 840px;
-  }
   .carousel .carousel-image {
     /* height: 60vh; */
     /* max-height: 60vh; */
-    height: 534px;
-    max-height: 534px;
+    height: 66.75vh;
+    max-height: 66.75vh;
+  }
+  .hero-section {
+    /* height: 60vh; */
+    /* width: 58.4vw; */
+    height: 66.75vh;
+    width: 58.35vw;
+  }
+  .copy {
+    /* height: 60vh; */
+    /* width: 41.6vw; */
+    height: 66.75vh;
+    width: 41.65vw;
+  }
+  .button-wrapper .carousel-button {
+    /* width: 5.8vw; */
+    /* height: 5.8vw; */
+    width: 5.575vw;
+    height: 5.575vw;
   }
   .button-wrapper {
+    /* top: calc(-110px + -5.8vw); */
     /* left: 57.4vw; */
-    left: 825px;
+    top: calc(-110px + -5.575vw);
+    left: 56.85vw;
+  }
+  .about-wrapper {
+    /* width: 40%; */
+    width: 40.25vw;
   }
 }
