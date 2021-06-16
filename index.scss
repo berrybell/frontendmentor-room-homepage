@@ -206,6 +206,30 @@ nav {
   letter-spacing: 5px;
 }
 
+/* Media queries - Tablet **/
+@media only screen and (min-width: 500px) and (max-width: 768px) {
+  .carousel .carousel-image {
+    max-height: 360px;
+  }
+
+  .hero-section {
+    max-height: 360px;
+  }
+
+  .carousel-button {
+    width: 10vw;
+    height: 10vw;
+  }
+
+  .carousel-button img {
+    height: 3.25vw;
+  }
+
+  .button-wrapper {
+    top: calc(-65px - 10vw);
+  }
+}
+
 /* Media queries - Large **/
 @media only screen and (min-width: 1440px,) {
   main {
@@ -344,7 +368,6 @@ nav {
 }
 
 /* Test: absolute values **/
-
 @media only screen and (min-width: 1440px) {
   .hero-section {
     /* height: 60vh; */
